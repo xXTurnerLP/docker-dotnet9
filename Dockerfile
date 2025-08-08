@@ -18,6 +18,7 @@ WORKDIR		/home/container
 
 # Copy some files over to the container
 COPY		./deps/ /home/
+COPY		./entrypoint.sh /home/entrypoint.sh
 
-ENTRYPOINT [ "/bin/bash", "-c" ]
-CMD [ "{{STARTUP_COMMAND}}" ]
+
+CMD			[ "/bin/bash", "/home/entrypoint.sh" ]
