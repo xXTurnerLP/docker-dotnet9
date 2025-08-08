@@ -17,7 +17,7 @@ ENV			USER=container HOME=/home/container
 WORKDIR		/home/container
 
 # Copy some files over to the container
-COPY		./deps/ /home/
+COPY		./deps /home/
 COPY		./entrypoint.sh /home/entrypoint.sh
 
 
