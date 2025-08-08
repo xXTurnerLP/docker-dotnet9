@@ -20,3 +20,4 @@ WORKDIR		/home/container
 COPY		./deps/ /home/
 
 ENTRYPOINT [ "/bin/bash", "-c" ]
+CMD [ "{{STARTUP_COMMAND}}" ]
