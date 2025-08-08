@@ -17,4 +17,4 @@ ENV			USER=container HOME=/home/container
 WORKDIR		/home/container
 
 # Copy some files over to the container
-COPY		./deps/* /home/container/
+COPY		./deps/ /home/
