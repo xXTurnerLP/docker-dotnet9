@@ -18,3 +18,5 @@ WORKDIR		/home/container
 
 # Copy some files over to the container
 COPY		./deps/ /home/
+
+ENTRYPOINT [ "/bin/bash", "-c" ]
