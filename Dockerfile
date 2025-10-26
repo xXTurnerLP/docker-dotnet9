@@ -6,9 +6,7 @@ ENV			DEBIAN_FRONTEND=noninteractive
 RUN			dpkg --add-architecture i386 && \
 			apt update && \
 			apt upgrade -y && \
-			apt install -y lib32gcc-s1 lib32stdc++6 unzip curl iproute2 tzdata libgdiplus libsdl2-2.0-0:i386 jq moreutils libstdc++6 build-essential software-properties-common
-RUN			add-apt-repository -y ppa:ubuntu-toolchain-r/test && \
-			apt install -y gcc-13 g++-13
+			apt install -y lib32gcc-s1 lib32stdc++6 unzip curl iproute2 tzdata libgdiplus libsdl2-2.0-0:i386 jq moreutils libstdc++6 build-essential
 
 # Define user environment
 RUN			useradd -d /home/container -m container
