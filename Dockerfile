@@ -3,6 +3,7 @@ LABEL		org.opencontainers.image.source="https://github.com/xXTurnerLP/docker-dot
 ENV			DEBIAN_FRONTEND=noninteractive
 
 # Install Dependancies
+RUN			add-apt-repository -y ppa:ubuntu-toolchain-r/test
 RUN			dpkg --add-architecture i386 && \
 			apt update && \
 			apt upgrade -y && \
